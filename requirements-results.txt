@@ -1,0 +1,2 @@
+# Only needed to render the final results figure. Other imports use the Python standard library.
+matplotlib>=3.8,<4

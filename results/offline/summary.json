@@ -1,0 +1,96 @@
+{
+  "task": "pick up the black bowl on the ramekin and place it on the plate",
+  "diagnostic_scope": "one fixed held-out success/failure pair; not an accuracy estimate",
+  "normalization": "each model divided by its own success-rollout final cumulative reward",
+  "ideal_reference": "visual aid only; linear on success and zero on failure, not used by any model",
+  "protocol": "adapted_progress_diagnostic",
+  "collection_date": "2026-09-23",
+  "figure": "../../assets/figures/offline_baseline_comparison.png",
+  "raw_figure": "../../assets/figures/raw_model_outputs.png",
+  "comparison_notes": [
+    "One held-out success/failure pair; not a policy success-rate evaluation.",
+    "JEV uses oracle-filtered simulator state; the principal visual baselines use RGB.",
+    "Positive running-best increments are local adaptations; methods use different sampling counts.",
+    "TemporalOT retains negative native costs and is excluded from the main normalized comparison."
+  ],
+  "models": [
+    {
+      "label": "VIP",
+      "method": "VIP",
+      "success_final_raw": 16.090118408203125,
+      "failure_final_raw": 3.9536914825439453,
+      "failure_to_success_final_ratio": 0.24572171454799607,
+      "included_in_figure_style_plot": true,
+      "ratio_interpretation": null,
+      "method_id": "vip",
+      "curve_definition": "positive increments of running-best raw progress",
+      "raw_signal_definition": "negative goal-embedding Euclidean distance",
+      "data_file": "adapted/vip.npz"
+    },
+    {
+      "label": "TemporalOT",
+      "method": "TemporalOT",
+      "success_final_raw": -0.06268229335546494,
+      "failure_final_raw": -0.15856774151325226,
+      "failure_to_success_final_ratio": 2.529705488183571,
+      "included_in_figure_style_plot": false,
+      "ratio_interpretation": "Both native returns are negative costs. The positive ratio is a cost-magnitude ratio: failure is more negative/worse, not 2.53x more rewarding.",
+      "method_id": "temporalot",
+      "curve_definition": "cumulative sum of released negative diagonal transport costs",
+      "raw_signal_definition": "negative diagonal temporal transport cost",
+      "data_file": "adapted/temporalot.npz"
+    },
+    {
+      "label": "RoboCLIP-S3D*",
+      "method": "RoboCLIP-compatible S3D prefix diagnostic",
+      "success_final_raw": 0.02766459435224533,
+      "failure_final_raw": 0.02706310898065567,
+      "failure_to_success_final_ratio": 0.9782579363380095,
+      "included_in_figure_style_plot": true,
+      "ratio_interpretation": null,
+      "method_id": "roboclip_s3d_prefix",
+      "curve_definition": "positive increments of running-best prefix-to-reference dot-product similarity",
+      "raw_signal_definition": "prefix-to-independent-reference S3D dot-product similarity",
+      "data_file": "adapted/roboclip_s3d_prefix.npz"
+    },
+    {
+      "label": "Robometer-4B (INT8)",
+      "method": "Robometer-4B LIBERO",
+      "success_final_raw": 0.2054230123758316,
+      "failure_final_raw": 0.12927889823913574,
+      "failure_to_success_final_ratio": 0.6293301648337898,
+      "included_in_figure_style_plot": true,
+      "ratio_interpretation": null,
+      "method_id": "robometer",
+      "curve_definition": "positive increments of running-best predicted progress",
+      "raw_signal_definition": "absolute predicted progress",
+      "data_file": "adapted/robometer.npz"
+    },
+    {
+      "label": "RoboDopamine-3B (NF4)",
+      "method": "Robo-Dopamine GRM-3B",
+      "success_final_raw": 0.8346953392028809,
+      "failure_final_raw": 0.29396864771842957,
+      "failure_to_success_final_ratio": 0.35218676073975014,
+      "included_in_figure_style_plot": true,
+      "ratio_interpretation": null,
+      "method_id": "robodopamine",
+      "curve_definition": "positive increments of running-best fused progress",
+      "raw_signal_definition": "fused absolute progress",
+      "data_file": "adapted/robodopamine.npz"
+    },
+    {
+      "label": "Jev-1.13 progress (state)*",
+      "method": "Jev-1.13.0 absolute-progress bins, privileged-state API",
+      "success_final_raw": 0.8829999566078186,
+      "failure_final_raw": 0.38199999928474426,
+      "failure_to_success_final_ratio": 0.43261610198969497,
+      "included_in_figure_style_plot": true,
+      "ratio_interpretation": null,
+      "method_id": "jev",
+      "curve_definition": "positive increments of running-best expected absolute progress, matching the other Figure-5-style curves",
+      "raw_signal_definition": "probability-weighted expected absolute progress over 11 bins",
+      "data_file": "adapted/jev.npz"
+    }
+  ]
+}

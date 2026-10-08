@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "experiment": "JEV transition-direction process reward + independent first-success reward",
+  "status": "in_progress",
+  "environment": {
+    "benchmark": "LIBERO",
+    "suite": "libero_spatial",
+    "task_id": 5,
+    "task_name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+    "instruction": "pick up the black bowl on the ramekin and place it on the plate",
+    "episode_horizon": 100,
+    "train_reset": "official_initial_state",
+    "eval_reset": "official_initial_state",
+    "demonstration_state_resets": false
+  },
+  "training": {
+    "algorithm": "DrQ-v2",
+    "seed": 0,
+    "target_environment_steps": 1000000,
+    "fresh_policy_and_replay_at_start": true,
+    "batch_size": 256,
+    "replay_capacity": 20000,
+    "hyperparameters": {
+      "observations": "3 x (agent RGB + wrist RGB), 18x84x84",
+      "augmentation": "RandomShiftsAug pad=4",
+      "learning_rate": 0.0001,
+      "gamma": 0.99,
+      "nstep": 3,
+      "tau": 0.01,
+      "update_every_env_steps": 2,
+      "seed_frames": 256,
+      "uniform_exploration_steps": 128,
+      "noise": "linear(1.0,0.1,500000), clip=0.3"
+    }
+  },
+  "reward": {
+    "version": "jev_local_direction_ungated_success200_v1",
+    "model": "jev-1.13.0",
+    "process_rewards": {
+      "progress": 1.0,
+      "neutral": 0.0,
+      "regression": -1.0
+    },
+    "confidence_threshold": 0.0,
+    "history_record_gate": false,
+    "success_bonus": 200.0,
+    "success_rule": "once on first native-success transition; never for timeout alone",
+    "native_success_in_jev": false,
+    "api_failure_rule": "fail closed; no substituted zero reward or partial episode commit",
+    "context": "current before/after transition plus at most two seconds of causal past",
+    "gamma": 0.99,
+    "nstep": 3,
+    "termination": "legacy: all episode boundaries zero bootstrap; unchanged"
+  },
+  "reward_input": {
+    "modality": "whitelisted structured simulator physical state",
+    "privileged_simulator_state": true,
+    "native_success_flag": false,
+    "future_information": false,
+    "demonstration_reference": false
+  },
+  "evaluation": {
+    "every_environment_steps": 2000,
+    "episodes_per_checkpoint": 10,
+    "seed_base": 100000,
+    "fixed_trial_seeds": true,
+    "metric": "independent LIBERO native success"
+  },
+  "checkpoints": {
+    "periodic_every_environment_steps": 20000,
+    "latest_after_each_committed_episode": true
+  },
+  "api_failure_policy": {
+    "discard_incomplete_episode": true,
+    "quota_exhaustion": "stop when configured key pool is exhausted",
+    "temporary_transport_failure": "supervised resume from verified API-stop checkpoint",
+    "resume_bit_exact": false
+  },
+  "recorded_runtime": {
+    "gpu": "NVIDIA GeForce RTX 4060",
+    "torch": "2.7.1+cu126",
+    "cuda": "12.6",
+    "drqv2_upstream_commit": "c0c650b76c6e5d22a7eb5f2edffd1440fe94f8ef"
+  },
+  "frozen_training_source_sha256": {
+    "train_drqv2_libero_snapshot.py": "310317e17f0e0c2707b79fcac8a4785582ab3c90d477095789bd94dd8bc69f27",
+    "local_reward.py": "672b6b73636831d5f5a2bf4cf4e98b5ba0f81bc04182827eacf5225a49224a6d",
+    "jev_local_scorer.py": "389d003ba1e0ffe1e79035892a64f32fb796fd02c9a583f76f26dd4d06f5a874",
+    "key_pool.py": "252eb1e8595205d772fd32cae71ebf8b30fe1a4acb3c7c9725aa78c4201bee7c",
+    "reward_review_v2.py": "c80af58ef4b2bf656d76454aeaf17dd3c661302c1c5e6c56e0c2880e0705520e",
+    "reward_review.py": "36287e4e5684d57eada743d856b5bbd987f2ba5ac82b519292e1fcd6e28e400f",
+    "three_class_review.py": "4f6b5c1afd1ceb7928e5cf4b42e24e66a652a75cb168bb8a926bcf2cb0f7a714",
+    "transition_reward.py": "01674fdb69b9c996d88b7bf1a7db55a2ea8a284590635d711051b9707233eea1"
+  }
+}

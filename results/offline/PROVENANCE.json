@@ -1,0 +1,317 @@
+{
+  "export_date": "2026-10-08",
+  "scope": "Offline LIBERO reward diagnostics only. API requests, API responses, credentials, rollouts, and checkpoints are not bundled.",
+  "source_naming": "Experiment identifiers and experiment-relative source filenames; no local machine paths.",
+  "artifacts": [
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "open_reward_curves_normalized.png",
+      "source_sha256": "e958dbc19b4a9724d508f423d9efaaeed54406c66586f922b007018f2214d8d9",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "assets/figures/offline_baseline_comparison.png",
+      "release_sha256": "e958dbc19b4a9724d508f423d9efaaeed54406c66586f922b007018f2214d8d9",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "open_reward_curves_normalized.pdf",
+      "source_sha256": "ac72a8ada3c6ae2914823bbdad584e1f0f04e6482d7ed7ee1448d22d5ba155fd",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "assets/figures/offline_baseline_comparison.pdf",
+      "release_sha256": "ac72a8ada3c6ae2914823bbdad584e1f0f04e6482d7ed7ee1448d22d5ba155fd",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_rarm_fig5_protocol_20260924",
+      "source_file": "open_reward_curves_normalized.png",
+      "source_sha256": "ec79449a233daede97ab42bc31dec7c10265901fc5aa151f0c226820a3af02e2",
+      "collection_date": "2026-09-24",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "assets/figures/native_protocol_comparison.png",
+      "release_sha256": "ec79449a233daede97ab42bc31dec7c10265901fc5aa151f0c226820a3af02e2",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_rarm_fig5_protocol_20260924",
+      "source_file": "open_reward_curves_normalized.pdf",
+      "source_sha256": "b1d1f4d413e399b8eaccd8eec1cd21a3b531a81d90f1c2177159fb0f32a2fa4d",
+      "collection_date": "2026-09-24",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "assets/figures/native_protocol_comparison.pdf",
+      "release_sha256": "b1d1f4d413e399b8eaccd8eec1cd21a3b531a81d90f1c2177159fb0f32a2fa4d",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "raw_model_outputs.png",
+      "source_sha256": "891dfd843ea0e669ed50d9517078d58298f8ee3db1f9ad886d9d7cb88716ad09",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "assets/figures/raw_model_outputs.png",
+      "release_sha256": "891dfd843ea0e669ed50d9517078d58298f8ee3db1f9ad886d9d7cb88716ad09",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "raw_model_outputs.pdf",
+      "source_sha256": "1df17a5d9c7c719d1b1de661b95f58fecf42c108a41617c4d3a2ffe51bba2e44",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "assets/figures/raw_model_outputs.pdf",
+      "release_sha256": "1df17a5d9c7c719d1b1de661b95f58fecf42c108a41617c4d3a2ffe51bba2e44",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "model_outputs/vip/vip_curves.npz",
+      "source_sha256": "c0d67d12ea45514a4cc657ccc5c2aed6f991ba26596168a49d5b6a966b12248f",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/adapted/vip.npz",
+      "release_sha256": "c0d67d12ea45514a4cc657ccc5c2aed6f991ba26596168a49d5b6a966b12248f",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_rarm_fig5_protocol_20260924",
+      "source_file": "model_outputs/vip/vip_curves.npz",
+      "source_sha256": "88a31ea073026cdd560ea26e251bfa1cb225460ab8c38fae5cb91f7f3f471cb5",
+      "collection_date": "2026-09-24",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/native/vip.npz",
+      "release_sha256": "88a31ea073026cdd560ea26e251bfa1cb225460ab8c38fae5cb91f7f3f471cb5",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "model_outputs/robometer_4b_libero_int8/robometer_curves.npz",
+      "source_sha256": "b69bd9a01d588a3f6a3cbe0747c8025c0a28a669e04440ba3592700a81b7fbe3",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/adapted/robometer.npz",
+      "release_sha256": "b69bd9a01d588a3f6a3cbe0747c8025c0a28a669e04440ba3592700a81b7fbe3",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_rarm_fig5_protocol_20260924",
+      "source_file": "model_outputs/robometer_4b_libero_int8/robometer_curves.npz",
+      "source_sha256": "2269be40685301f29281d502a8f5a8195124d48a0abea72ba85118a55d92d1a9",
+      "collection_date": "2026-09-24",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/native/robometer.npz",
+      "release_sha256": "2269be40685301f29281d502a8f5a8195124d48a0abea72ba85118a55d92d1a9",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "model_outputs/robodopamine_grm3b_nf4/robodopamine_curves.npz",
+      "source_sha256": "bcb974adfc97789de9ec060b28029d1998fdec013604455b9e5b644081a42630",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/adapted/robodopamine.npz",
+      "release_sha256": "bcb974adfc97789de9ec060b28029d1998fdec013604455b9e5b644081a42630",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_rarm_fig5_protocol_20260924",
+      "source_file": "model_outputs/robodopamine_grm3b_nf4/robodopamine_curves.npz",
+      "source_sha256": "b72994d7446f4972ce1b10e04e766fa11d8e0ec545d83974503a6560e1454190",
+      "collection_date": "2026-09-24",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/native/robodopamine.npz",
+      "release_sha256": "b72994d7446f4972ce1b10e04e766fa11d8e0ec545d83974503a6560e1454190",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "model_outputs/jev_state_progress_bins/jev_progress_curves.npz",
+      "source_sha256": "8b586b30afcc795f30185acf294d1d6b142608ed073e2cd6644304673f9d68b2",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/adapted/jev.npz",
+      "release_sha256": "8b586b30afcc795f30185acf294d1d6b142608ed073e2cd6644304673f9d68b2",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_rarm_fig5_protocol_20260924",
+      "source_file": "model_outputs/jev_state_progress_bins/jev_progress_curves.npz",
+      "source_sha256": "c28f0e11754a10fa1de7ccb8d4e8252077d6c7b5adba5be66a07070252f47027",
+      "collection_date": "2026-09-24",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/native/jev.npz",
+      "release_sha256": "c28f0e11754a10fa1de7ccb8d4e8252077d6c7b5adba5be66a07070252f47027",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "model_outputs/roboclip_s3d_prefix/roboclip_s3d_prefix_curves.npz",
+      "source_sha256": "d9d9ba0a983c43e59c74d1fa7fd704ca6bae358dcac74b400969e132e7bab232",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/adapted/roboclip_s3d_prefix.npz",
+      "release_sha256": "d9d9ba0a983c43e59c74d1fa7fd704ca6bae358dcac74b400969e132e7bab232",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "model_outputs/temporalot/temporalot_curves.npz",
+      "source_sha256": "975e5b6ea23f26af36db23f402235e4dafcf2890451046b270f7bd9b375ea702",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/adapted/temporalot.npz",
+      "release_sha256": "975e5b6ea23f26af36db23f402235e4dafcf2890451046b270f7bd9b375ea702",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_rarm_fig5_protocol_20260924",
+      "source_file": "native_protocol_curves.npz",
+      "source_sha256": "daf2f8a32989b078e2dd8a317bce81c02dc23078298446485d411dcf15ca6440",
+      "collection_date": "2026-09-24",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/native_protocol_curves.npz",
+      "release_sha256": "daf2f8a32989b078e2dd8a317bce81c02dc23078298446485d411dcf15ca6440",
+      "operation": "byte-for-byte copy"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "summary.json",
+      "source_sha256": "a3cbc8cc1621f388f6a51b344353729024e172afbdbee30dd203bf23ea0e89b7",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/summary.json",
+      "release_sha256": "0d12bc9d962e8a431f0b34e78a3d124f701d4693b2a3ca2323f5a1f40dc72079",
+      "operation": "allowlisted metadata rewrite with portable relative paths"
+    },
+    {
+      "source_experiment": "libero_task5_rarm_fig5_protocol_20260924",
+      "source_file": "native_protocol_summary.json",
+      "source_sha256": "7462f6dff7cb2a554c5e710a50441b55a51a895a98f6ff8880245fc82076d564",
+      "collection_date": "2026-09-24",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/native_protocol_summary.json",
+      "release_sha256": "5e23c0d9aaa91efc98f22573387c3838e3ecce6edd650ebc3d2e1b15c147ff59",
+      "operation": "metadata rewrite with portable relative paths"
+    },
+    {
+      "source_experiment": "libero_task5_rarm_fig5_protocol_20260924",
+      "source_file": "protocol_manifest.json",
+      "source_sha256": "59b45e8605ec1354f62e722d7499fa9c3f154a842e610b03082a0db3d7b04b58",
+      "collection_date": "2026-09-24",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/protocol_manifest.json",
+      "release_sha256": "97f0d8a2bc8bb38b72e8878902de795f7dbcbc53cf562bea887e92f06f5ab761",
+      "operation": "rewrite local trajectory path; retain shared time grid and role source hashes"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "summary.json",
+      "source_sha256": "a3cbc8cc1621f388f6a51b344353729024e172afbdbee30dd203bf23ea0e89b7",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/comparison.csv",
+      "release_sha256": "96b234b2166c7ed74d2f039d91fb6c8a7a99e7bea80c8c36d496a138727365ba",
+      "operation": "CSV export of adapted-progress summary"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "model_outputs/vip/vip_curves.npz",
+      "source_sha256": "c0d67d12ea45514a4cc657ccc5c2aed6f991ba26596168a49d5b6a966b12248f",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/curves_long.csv",
+      "release_sha256": "8ee680acb6a02a40d85ed4d69c1f8c7820f6f8a682bea6669353d92a444776b0",
+      "operation": "CSV export; effective instantaneous reward is differenced from the plotted cumulative array"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "model_outputs/robometer_4b_libero_int8/robometer_curves.npz",
+      "source_sha256": "b69bd9a01d588a3f6a3cbe0747c8025c0a28a669e04440ba3592700a81b7fbe3",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/curves_long.csv",
+      "release_sha256": "8ee680acb6a02a40d85ed4d69c1f8c7820f6f8a682bea6669353d92a444776b0",
+      "operation": "CSV export; effective instantaneous reward is differenced from the plotted cumulative array"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "model_outputs/robodopamine_grm3b_nf4/robodopamine_curves.npz",
+      "source_sha256": "bcb974adfc97789de9ec060b28029d1998fdec013604455b9e5b644081a42630",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/curves_long.csv",
+      "release_sha256": "8ee680acb6a02a40d85ed4d69c1f8c7820f6f8a682bea6669353d92a444776b0",
+      "operation": "CSV export; effective instantaneous reward is differenced from the plotted cumulative array"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "model_outputs/jev_state_progress_bins/jev_progress_curves.npz",
+      "source_sha256": "8b586b30afcc795f30185acf294d1d6b142608ed073e2cd6644304673f9d68b2",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/curves_long.csv",
+      "release_sha256": "8ee680acb6a02a40d85ed4d69c1f8c7820f6f8a682bea6669353d92a444776b0",
+      "operation": "CSV export; effective instantaneous reward is differenced from the plotted cumulative array"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "model_outputs/roboclip_s3d_prefix/roboclip_s3d_prefix_curves.npz",
+      "source_sha256": "d9d9ba0a983c43e59c74d1fa7fd704ca6bae358dcac74b400969e132e7bab232",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/curves_long.csv",
+      "release_sha256": "8ee680acb6a02a40d85ed4d69c1f8c7820f6f8a682bea6669353d92a444776b0",
+      "operation": "CSV export; effective instantaneous reward is differenced from the plotted cumulative array"
+    },
+    {
+      "source_experiment": "libero_task5_open_reward_curves_20260923",
+      "source_file": "model_outputs/temporalot/temporalot_curves.npz",
+      "source_sha256": "975e5b6ea23f26af36db23f402235e4dafcf2890451046b270f7bd9b375ea702",
+      "collection_date": "2026-09-23",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/curves_long.csv",
+      "release_sha256": "8ee680acb6a02a40d85ed4d69c1f8c7820f6f8a682bea6669353d92a444776b0",
+      "operation": "CSV export; effective instantaneous reward is differenced from the plotted cumulative array"
+    },
+    {
+      "source_experiment": "libero_task5_rarm_fig5_protocol_20260924",
+      "source_file": "model_outputs/vip/vip_curves.npz",
+      "source_sha256": "88a31ea073026cdd560ea26e251bfa1cb225460ab8c38fae5cb91f7f3f471cb5",
+      "collection_date": "2026-09-24",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/curves_long.csv",
+      "release_sha256": "8ee680acb6a02a40d85ed4d69c1f8c7820f6f8a682bea6669353d92a444776b0",
+      "operation": "CSV export; effective instantaneous reward is differenced from the plotted cumulative array"
+    },
+    {
+      "source_experiment": "libero_task5_rarm_fig5_protocol_20260924",
+      "source_file": "model_outputs/robometer_4b_libero_int8/robometer_curves.npz",
+      "source_sha256": "2269be40685301f29281d502a8f5a8195124d48a0abea72ba85118a55d92d1a9",
+      "collection_date": "2026-09-24",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/curves_long.csv",
+      "release_sha256": "8ee680acb6a02a40d85ed4d69c1f8c7820f6f8a682bea6669353d92a444776b0",
+      "operation": "CSV export; effective instantaneous reward is differenced from the plotted cumulative array"
+    },
+    {
+      "source_experiment": "libero_task5_rarm_fig5_protocol_20260924",
+      "source_file": "model_outputs/robodopamine_grm3b_nf4/robodopamine_curves.npz",
+      "source_sha256": "b72994d7446f4972ce1b10e04e766fa11d8e0ec545d83974503a6560e1454190",
+      "collection_date": "2026-09-24",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/curves_long.csv",
+      "release_sha256": "8ee680acb6a02a40d85ed4d69c1f8c7820f6f8a682bea6669353d92a444776b0",
+      "operation": "CSV export; effective instantaneous reward is differenced from the plotted cumulative array"
+    },
+    {
+      "source_experiment": "libero_task5_rarm_fig5_protocol_20260924",
+      "source_file": "model_outputs/jev_state_progress_bins/jev_progress_curves.npz",
+      "source_sha256": "c28f0e11754a10fa1de7ccb8d4e8252077d6c7b5adba5be66a07070252f47027",
+      "collection_date": "2026-09-24",
+      "collection_date_basis": "experiment identifier date",
+      "release_file": "results/offline/curves_long.csv",
+      "release_sha256": "8ee680acb6a02a40d85ed4d69c1f8c7820f6f8a682bea6669353d92a444776b0",
+      "operation": "CSV export; effective instantaneous reward is differenced from the plotted cumulative array"
+    }
+  ]
+}

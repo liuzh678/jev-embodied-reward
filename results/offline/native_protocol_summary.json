@@ -1,0 +1,43 @@
+{
+  "protocol": "RARM Figure-5 public protocol with public native reward definitions",
+  "scope": "one fixed held-out success/failure pair; not an accuracy estimate",
+  "time_grid": "same 16 exact control times for every method",
+  "normalization": "both trajectories divided by that method's own success-rollout final cumulative reward",
+  "collection_date": "2026-09-24",
+  "figure": "../../assets/figures/native_protocol_comparison.png",
+  "output_npz": "native_protocol_curves.npz",
+  "methods": [
+    {
+      "key": "vip",
+      "reward_definition": "Official VIP reward: negative Euclidean distance from the current agentview embedding to the independent reference-goal embedding.",
+      "success_final_raw": -245.55716848373413,
+      "failure_final_raw": -269.74608421325684,
+      "failure_to_success_final_ratio": 1.098506249599164,
+      "data_file": "native/vip.npz"
+    },
+    {
+      "key": "robometer",
+      "reward_definition": "Official Robometer LIBERO wrapper default: absolute predicted progress returned directly (use_relative_rewards=False).",
+      "success_final_raw": 0.7460663337260485,
+      "failure_final_raw": 0.2545403662370518,
+      "failure_to_success_final_ratio": 0.3411765881001643,
+      "data_file": "native/robometer.npz"
+    },
+    {
+      "key": "robodopamine",
+      "reward_definition": "Official public recommendation: average the incremental-, forward-, and backward-mode hop/reward outputs.",
+      "success_final_raw": 0.9259999836795032,
+      "failure_final_raw": 0.14799999073147774,
+      "failure_to_success_final_ratio": 0.15982720663060168,
+      "data_file": "native/robodopamine.npz"
+    },
+    {
+      "key": "jev",
+      "reward_definition": "Predeclared local Jev contract: reward only an increase beyond the prior best probability-weighted absolute-progress estimate.",
+      "success_final_raw": 0.8720000237226486,
+      "failure_final_raw": 0.3869999945163727,
+      "failure_to_success_final_ratio": 0.44380732108725635,
+      "data_file": "native/jev.npz"
+    }
+  ]
+}

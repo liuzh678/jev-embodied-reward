@@ -1,0 +1,7 @@
+method_id,label,success_final_raw,failure_final_raw,failure_to_success_final_ratio,included_in_main_figure,ratio_interpretation,curve_definition,data_file
+vip,VIP,16.090118408203125,3.9536914825439453,0.24572171454799607,True,,positive increments of running-best raw progress,adapted/vip.npz
+temporalot,TemporalOT,-0.06268229335546494,-0.15856774151325226,2.529705488183571,False,"Both native returns are negative costs. The positive ratio is a cost-magnitude ratio: failure is more negative/worse, not 2.53x more rewarding.",cumulative sum of released negative diagonal transport costs,adapted/temporalot.npz
+roboclip_s3d_prefix,RoboCLIP-S3D*,0.02766459435224533,0.02706310898065567,0.9782579363380095,True,,positive increments of running-best prefix-to-reference dot-product similarity,adapted/roboclip_s3d_prefix.npz
+robometer,Robometer-4B (INT8),0.2054230123758316,0.12927889823913574,0.6293301648337898,True,,positive increments of running-best predicted progress,adapted/robometer.npz
+robodopamine,RoboDopamine-3B (NF4),0.8346953392028809,0.29396864771842957,0.35218676073975014,True,,positive increments of running-best fused progress,adapted/robodopamine.npz
+jev,Jev-1.13 progress (state)*,0.8829999566078186,0.38199999928474426,0.43261610198969497,True,,"positive increments of running-best expected absolute progress, matching the other Figure-5-style curves",adapted/jev.npz
